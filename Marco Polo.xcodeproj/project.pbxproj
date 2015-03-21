@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F600F7D1ABDCCB2009587C4 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F600F7C1ABDCCB2009587C4 /* SecondView.swift */; };
+		3F74A64B1ABDD818001E2D83 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F74A6471ABDD818001E2D83 /* AcousticModelEnglish.bundle */; };
+		3F74A64C1ABDD818001E2D83 /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F74A6481ABDD818001E2D83 /* AcousticModelSpanish.bundle */; };
+		3F74A64D1ABDD818001E2D83 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F74A6491ABDD818001E2D83 /* OpenEars.framework */; };
+		3F74A64E1ABDD818001E2D83 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F74A64A1ABDD818001E2D83 /* Slt.framework */; };
+		3F74A6501ABDD839001E2D83 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F74A64F1ABDD839001E2D83 /* AudioToolbox.framework */; };
+		3F74A6521ABDD840001E2D83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F74A6511ABDD840001E2D83 /* AVFoundation.framework */; };
 		3FA768C21ABD8DE00087FDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA768C11ABD8DE00087FDC4 /* AppDelegate.swift */; };
 		3FA768C41ABD8DE00087FDC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA768C31ABD8DE00087FDC4 /* ViewController.swift */; };
 		3FA768C71ABD8DE00087FDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA768C51ABD8DE00087FDC4 /* Main.storyboard */; };
 		3FA768C91ABD8DE00087FDC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA768C81ABD8DE00087FDC4 /* Images.xcassets */; };
 		3FA768CC1ABD8DE00087FDC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA768CA1ABD8DE00087FDC4 /* LaunchScreen.xib */; };
 		3FA768D81ABD8DE00087FDC4 /* Marco_PoloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA768D71ABD8DE00087FDC4 /* Marco_PoloTests.swift */; };
+		3FA768E21ABDA6CF0087FDC4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA768E11ABDA6CF0087FDC4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F600F7C1ABDCCB2009587C4 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		3F74A6471ABDD818001E2D83 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		3F74A6481ABDD818001E2D83 /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		3F74A6491ABDD818001E2D83 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		3F74A64A1ABDD818001E2D83 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		3F74A64F1ABDD839001E2D83 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3F74A6511ABDD840001E2D83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3FA768BC1ABD8DE00087FDC4 /* Marco Polo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marco Polo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA768C01ABD8DE00087FDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA768C11ABD8DE00087FDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +51,8 @@
 		3FA768D11ABD8DE00087FDC4 /* Marco PoloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marco PoloTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA768D61ABD8DE00087FDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA768D71ABD8DE00087FDC4 /* Marco_PoloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marco_PoloTests.swift; sourceTree = "<group>"; };
+		3FA768E11ABDA6CF0087FDC4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FDCE9A01ABDD6FB00BCE5C8 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F74A6521ABDD840001E2D83 /* AVFoundation.framework in Frameworks */,
+				3F74A6501ABDD839001E2D83 /* AudioToolbox.framework in Frameworks */,
+				3F74A64E1ABDD818001E2D83 /* Slt.framework in Frameworks */,
+				3FA768E21ABDA6CF0087FDC4 /* CoreLocation.framework in Frameworks */,
+				3F74A64D1ABDD818001E2D83 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F74A6461ABDD818001E2D83 /* Framework2 */ = {
+			isa = PBXGroup;
+			children = (
+				3F74A6471ABDD818001E2D83 /* AcousticModelEnglish.bundle */,
+				3F74A6481ABDD818001E2D83 /* AcousticModelSpanish.bundle */,
+				3F74A6491ABDD818001E2D83 /* OpenEars.framework */,
+				3F74A64A1ABDD818001E2D83 /* Slt.framework */,
+			);
+			path = Framework2;
+			sourceTree = "<group>";
+		};
 		3FA768B31ABD8DDF0087FDC4 = {
 			isa = PBXGroup;
 			children = (
+				3F74A6511ABDD840001E2D83 /* AVFoundation.framework */,
+				3F74A64F1ABDD839001E2D83 /* AudioToolbox.framework */,
+				3F74A6461ABDD818001E2D83 /* Framework2 */,
+				3FA768E11ABDA6CF0087FDC4 /* CoreLocation.framework */,
 				3FA768BE1ABD8DE00087FDC4 /* Marco Polo */,
 				3FA768D41ABD8DE00087FDC4 /* Marco PoloTests */,
 				3FA768BD1ABD8DE00087FDC4 /* Products */,
@@ -78,11 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				3FA768C11ABD8DE00087FDC4 /* AppDelegate.swift */,
+				3FDCE9A01ABDD6FB00BCE5C8 /* Bridge-Header.h */,
 				3FA768C31ABD8DE00087FDC4 /* ViewController.swift */,
 				3FA768C51ABD8DE00087FDC4 /* Main.storyboard */,
 				3FA768C81ABD8DE00087FDC4 /* Images.xcassets */,
 				3FA768CA1ABD8DE00087FDC4 /* LaunchScreen.xib */,
 				3FA768BF1ABD8DE00087FDC4 /* Supporting Files */,
+				3F600F7C1ABDCCB2009587C4 /* SecondView.swift */,
 			);
 			path = "Marco Polo";
 			sourceTree = "<group>";
@@ -161,6 +200,11 @@
 				TargetAttributes = {
 					3FA768BB1ABD8DE00087FDC4 = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3FA768D01ABD8DE00087FDC4 = {
 						CreatedOnToolsVersion = 6.2;
@@ -193,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA768C71ABD8DE00087FDC4 /* Main.storyboard in Resources */,
+				3F74A64C1ABDD818001E2D83 /* AcousticModelSpanish.bundle in Resources */,
+				3F74A64B1ABDD818001E2D83 /* AcousticModelEnglish.bundle in Resources */,
 				3FA768CC1ABD8DE00087FDC4 /* LaunchScreen.xib in Resources */,
 				3FA768C91ABD8DE00087FDC4 /* Images.xcassets in Resources */,
 			);
@@ -212,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F600F7D1ABDCCB2009587C4 /* SecondView.swift in Sources */,
 				3FA768C41ABD8DE00087FDC4 /* ViewController.swift in Sources */,
 				3FA768C21ABD8DE00087FDC4 /* AppDelegate.swift in Sources */,
 			);
@@ -336,9 +383,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marco",
+					Polo,
+					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/Framework2",
+				);
 				INFOPLIST_FILE = "Marco Polo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marco Polo/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -346,9 +401,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marco",
+					Polo,
+					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/Framework2",
+				);
 				INFOPLIST_FILE = "Marco Polo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marco Polo/Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +468,7 @@
 				3FA768DD1ABD8DE00087FDC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA768DE1ABD8DE00087FDC4 /* Build configuration list for PBXNativeTarget "Marco PoloTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +477,7 @@
 				3FA768E01ABD8DE00087FDC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

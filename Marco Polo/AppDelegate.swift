@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var pushNotificationController:ViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        if application.respondsToSelector("registerUserNotificationSettings:") {
+            
+            let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
+            let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+            
+            application.registerUserNotificationSettings(settings)
+            application.registerForRemoteNotifications()
+            
+        } else {
+            // Register for Push Notifications before iOS 8
+            application.registerForRemoteNotificationTypes(.Alert | .Badge | .Sound)
+        }
+        
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    categories: nil
+                )
+            )
+        }
         return true
     }
 
