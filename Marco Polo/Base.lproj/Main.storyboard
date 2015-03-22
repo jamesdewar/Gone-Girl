@@ -40,18 +40,34 @@
                                     <rect key="frame" x="16" y="81" width="288" height="70"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmi-f2-MJS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48905745630000003" blue="0.41977026779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Set Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="387" width="111" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="n75-Em-hcN" kind="show" id="28a-Gg-W2U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="max-rm-IRZ"/>
                                 <exclude reference="Vir-rt-an4"/>
+                                <exclude reference="dmi-f2-MJS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="max-rm-IRZ"/>
                                 <include reference="Vir-rt-an4"/>
+                                <include reference="dmi-f2-MJS"/>
                             </mask>
                         </variation>
                     </view>
@@ -73,7 +89,7 @@
                         <viewControllerLayoutGuide type="bottom" id="egM-kl-Dqr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4xw-4b-xzg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -91,7 +107,105 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="949.5" y="311"/>
+            <point key="canvasLocation" x="846" y="311"/>
+        </scene>
+        <!--Set Up View-->
+        <scene sceneID="uQ3-Bl-NWu">
+            <objects>
+                <viewController id="n75-Em-hcN" customClass="SetUpView" customModule="Marco_Polo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="koH-cX-kTR"/>
+                        <viewControllerLayoutGuide type="bottom" id="TbY-Ua-qVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AFh-tI-Kfj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 1" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-Y9-WU3">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="52" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgD-eE-ImV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="95" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-IE-s1k">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="133" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3f-3i-uQH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48905745630000003" blue="0.41977026779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="225" width="110" height="48"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clue_update:" destination="n75-Em-hcN" eventType="touchUpInside" id="iVH-nL-w6H"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clue 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tBR-ZE-Obd">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="176" width="288" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="s8Q-Y9-WU3"/>
+                                <exclude reference="CgD-eE-ImV"/>
+                                <exclude reference="S7L-IE-s1k"/>
+                                <exclude reference="S3f-3i-uQH"/>
+                                <exclude reference="tBR-ZE-Obd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="s8Q-Y9-WU3"/>
+                                <include reference="CgD-eE-ImV"/>
+                                <include reference="S7L-IE-s1k"/>
+                                <include reference="S3f-3i-uQH"/>
+                                <include reference="tBR-ZE-Obd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Clue1" destination="AFh-tI-Kfj" id="QOL-Q8-jVI"/>
+                        <outlet property="Clue2" destination="CgD-eE-ImV" id="WqK-cZ-4Pb"/>
+                        <outlet property="Clue3" destination="S7L-IE-s1k" id="gXF-G5-tIp"/>
+                        <outlet property="Clue4" destination="tBR-ZE-Obd" id="aP5-gb-DsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pC-Sf-BLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="311"/>
         </scene>
     </scenes>
 </document>

@@ -18,29 +18,69 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        if application.respondsToSelector("registerUserNotificationSettings:") {
+        
+        self.pushNotificationController = ViewController()
+            // Register for Push Notitications, if running iOS 8
+            if application.respondsToSelector("registerUserNotificationSettings:") {
+                
+                let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
+                let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+                
+                application.registerUserNotificationSettings(settings)
+                application.registerForRemoteNotifications()
+                
+            } else {
+                // Register for Push Notifications before iOS 8
+                application.registerForRemoteNotificationTypes(.Alert | .Badge | .Sound)
+            }
             
-            let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
-            let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+            if(application.respondsToSelector("registerUserNotificationSettings:")) {
+                application.registerUserNotificationSettings(
+                    UIUserNotificationSettings(
+                        forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                        categories: nil
+                    )
+                    )
+            }
+                    return true
+    }
+        
+        func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+            UIApplication.sharedApplication().registerForRemoteNotifications()
             
-            application.registerUserNotificationSettings(settings)
-            application.registerForRemoteNotifications()
-            
-        } else {
-            // Register for Push Notifications before iOS 8
-            application.registerForRemoteNotificationTypes(.Alert | .Badge | .Sound)
         }
         
-        if(application.respondsToSelector("registerUserNotificationSettings:")) {
-            application.registerUserNotificationSettings(
-                UIUserNotificationSettings(
-                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
-                    categories: nil
-                )
-            )
+        func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+            var characterSet: NSCharacterSet = NSCharacterSet( charactersInString: "<>" )
+            
+            var deviceTokenString: String = ( deviceToken.description as NSString )
+                .stringByTrimmingCharactersInSet( characterSet )
+                .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
+            
+            println(deviceTokenString)
+            
+            let deviceTokenTemp = deviceTokenString
+            
+            let currentInstallation:PFInstallation  = PFInstallation.currentInstallation()
+            currentInstallation.setDeviceTokenFromData(deviceToken)
+            currentInstallation.saveInBackgroundWithBlock { (succeeded, e) -> Void in
+                
+            }
+            
         }
-        return true
-    }
+        
+        func application(application: UIApplication, didReceiveRemoteNotification userInfo:NSDictionary!) {
+            
+            println("didReceiveRemoteNotification")
+            PFPush.handlePush(userInfo)
+            
+            
+            
+        }
+        
+        func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+            println(error.localizedDescription)
+        }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

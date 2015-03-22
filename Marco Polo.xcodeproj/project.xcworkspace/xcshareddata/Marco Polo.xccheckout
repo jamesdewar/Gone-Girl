@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4EBDB60C-CD79-4D00-80B5-A66526697423</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Marco Polo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8868EB92FFFE9D95093073553EA93290FA834E7D</key>
+		<string>https://github.com/jamesdewar/Gone-Girl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Marco Polo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8868EB92FFFE9D95093073553EA93290FA834E7D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jamesdewar/Gone-Girl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8868EB92FFFE9D95093073553EA93290FA834E7D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8868EB92FFFE9D95093073553EA93290FA834E7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Marco%20Polo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

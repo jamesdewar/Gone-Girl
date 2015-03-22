@@ -10,14 +10,13 @@ import UIKit
 import CoreLocation
 import Darwin
 
-class SecondView: UIViewController, UIApplicationDelegate, CLLocationManagerDelegate, OEEventsObserverDelegate {
+class SecondView: UIViewController, UIApplicationDelegate, CLLocationManagerDelegate{
 
 
     
     var lastProximity: CLProximity?
     var locationManager: CLLocationManager?
     var timer = NSTimer()
-    var audioRecorder:AVAudioRecorder!
     var hue:CGFloat = 0.0
     var beacon_id_list : [Int] = [2310,1804,3006,1412]
     var clue_list : [String] = ["You have found the first clue. Next clue: In the smaller room you will find","You have found the Second clue. Next clue: In the smaller room you will find","You have found the Third clue. Next clue: In the smaller room you will find","You have found the Third clue. Next clue: In the smaller room you will find"]
@@ -33,6 +32,17 @@ class SecondView: UIViewController, UIApplicationDelegate, CLLocationManagerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+   
+        
+        let notification:UILocalNotification = UILocalNotification()
+        func sendLocalNotificationWithMessage(message: String!, playSound: Bool) {
+            let notification:UILocalNotification = UILocalNotification()
+            notification.alertBody = message
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
+
         
         locationManager = CLLocationManager()
         if(locationManager!.respondsToSelector("requestAlwaysAuthorization")) {
